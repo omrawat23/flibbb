@@ -1,29 +1,23 @@
-"use client"
+'use client';
+
 import React from 'react';
 import { FiMinus, FiPlus } from 'react-icons/fi';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-interface Product {
-  id: number;
-  name: string;
-  imageUrl: string;
-  price: number;
-  quantity: number;
-}
+import { useStore } from '../../store/store/store';
+import { Product } from '../app/types';
 
 interface Props {
-  cartItems?: Product[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
 
 const CheckoutPage: React.FC<Props> = ({
-  cartItems = [],
   updateQuantity,
   removeFromCart,
 }) => {
+  const cartItems = useStore(state => state.cartItems);
   const [cartCount, setCartCount] = useState<number>(0);
   const [totalEstimate, setTotalEstimate] = useState<number>(0);
   const isConfigureOrderPage =
@@ -37,7 +31,6 @@ const CheckoutPage: React.FC<Props> = ({
   }, [cartItems]);
 
   const handleQuantityChange = (productId: number, newQuantity: number) => {
-  
     newQuantity = Math.max(newQuantity, 0);
     updateQuantity(productId, newQuantity);
   };
@@ -61,7 +54,7 @@ const CheckoutPage: React.FC<Props> = ({
         </Link>
       )}
       {cartItems.length > 0 && (
-        <div className="checkout-sidebar hidden md:flex fixed right-0 top-44 bottom-20 w-80 .grainy-dark p-4 flex-col justify-between shadow-lg">
+        <div className="checkout-sidebar hidden md:flex fixed right-0 top-44 bottom-20 w-80 grainy-dark p-4 flex-col justify-between shadow-lg">
           <div className="flex-1 overflow-y-hidden">
             <h2 className="text-xl font-bold">Your swag pack</h2>
             <ul className="mt-4 space-y-4 mb-8">
@@ -106,8 +99,7 @@ const CheckoutPage: React.FC<Props> = ({
                             <Image
                               src="/icons/delete.svg" 
                               alt="delete from cart"
-                              className="cursor-pointer  "
-                              // w-[12.5px] h-[13.75px]
+                              className="cursor-pointer"
                             />
                           </button>
                         </>

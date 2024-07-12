@@ -1,7 +1,5 @@
 "use client"
 
-'use client';
-
 import React, { useState, useEffect, DragEvent } from 'react';
 import { Product } from '../../types';
 import CheckoutPage from '../../../components/CheckoutPage';
@@ -234,7 +232,6 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
       {/* CheckoutPage */}
       <div className="w-full bg-white p-6 rounded-lg shadow-md">
         <CheckoutPage
-          cartItems={cartItems}
           updateQuantity={updateQuantity}
           removeFromCart={removeFromCart}
         />
