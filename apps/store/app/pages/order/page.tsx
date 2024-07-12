@@ -175,7 +175,8 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
             <input type="text" value={formData.customItems} onChange={(e) => handleFormDataChange('customItems', e.target.value)} className="w-full bg-white rounded border border-gray-300 px-3 py-2" />
           </div>
           <div>
-            <label className="block font-semibold mb-2">Upload the logo you'd like to add (Upload Vector file for best quality: svg, eps, ai, pdf)</label>
+          <label className="block font-semibold mb-2">Upload the logo you&rsquo;d like to add (Upload Vector file for best quality: svg, eps, ai, pdf)</label>
+
             <div
               className={`flex flex-col items-center justify-center border border-gray-300 w-1/2 h-32 bg-gray-100 rounded-lg ${dragOver ? 'border-green-500 bg-green-100' : ''}`}
               onDragOver={handleDragOver}
