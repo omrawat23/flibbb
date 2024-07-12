@@ -23,7 +23,7 @@ export interface FormData {
 }
 
 interface Props {
-  cartItems: Product[];
+  cartItems?: Product[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
