@@ -3,6 +3,7 @@ import React from 'react';
 import { FiMinus, FiPlus } from 'react-icons/fi';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface Product {
   id: number;
@@ -66,7 +67,7 @@ const CheckoutPage: React.FC<Props> = ({
             <ul className="mt-4 space-y-4 mb-8">
               {cartItems.map((item) => (
                 <li key={item.id} className="flex items-center py-2 space-x-4">
-                  <img
+                  <Image
                     src={item.imageUrl}
                     alt={item.name}
                     className="w-16 h-16 object-cover rounded-lg"
@@ -102,7 +103,7 @@ const CheckoutPage: React.FC<Props> = ({
                             onClick={() => removeFromCart(item.id)}
                             className="ml-12"
                           >
-                            <img
+                            <Image
                               src="/icons/delete.svg" 
                               alt="delete from cart"
                               className="cursor-pointer  "

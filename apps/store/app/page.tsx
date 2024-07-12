@@ -75,7 +75,7 @@ const CategoryBar: React.FC<{
             className={`flex flex-col items-center rounded-md body-3 ${selectedCategory === category.name ? 'text-[#090A09]' : 'text-[#6D736F]'} hover:text-[#2CA05A] transition-colors`}
             style={{ marginRight: index < categories.length - 1 ? '20px' : '0' }}
           >
-            <img
+            <Image
               src={category.imagePath}
               alt={category.name}
               className="w-5 h-4"
@@ -323,7 +323,7 @@ const PageWithSidebar: React.FC = () => {
           <div className="flex items-center space-x-2 px-2">
             <div className="flex space-x-2 mr-9 ml-0">
               {selectedProduct.images && selectedProduct.images.map((img, index) => (
-                <img
+                <Image
                   key={index}
                   src={img}
                   alt="Thumbnail"
