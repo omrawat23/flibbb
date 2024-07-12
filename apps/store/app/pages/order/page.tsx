@@ -10,7 +10,7 @@ import { db, storage } from '../../firebaseConfig';
 import { collection, addDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
-interface FormData {
+export interface FormData {
   swagBoxes: number;
   deliveryDate: string;
   customItems: string;
@@ -19,15 +19,16 @@ interface FormData {
   contactEmail: string;
   contactPhone: string;
   logoUrl?: string;
-  cartItems: Product[]; 
+  cartItems: Product[]; // Add cartItems to FormData
 }
 
 interface Props {
+  cartItems?: Product[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
 
-const OrderForm: React.FC= () => {
+const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
   const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
@@ -230,13 +231,13 @@ const OrderForm: React.FC= () => {
       </div>
 
       {/* CheckoutPage */}
-      {/* <div className="w-full bg-white p-6 rounded-lg shadow-md">
+      <div className="w-full bg-white p-6 rounded-lg shadow-md">
         <CheckoutPage
           cartItems={cartItems}
           updateQuantity={updateQuantity}
           removeFromCart={removeFromCart}
         />
-      </div> */}
+      </div>
     </div>
   );
 };
