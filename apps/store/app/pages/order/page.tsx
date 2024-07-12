@@ -23,6 +23,7 @@ export interface FormData {
 }
 
 interface Props {
+  cartItems: Product[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
@@ -230,13 +231,13 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
       </div>
 
       {/* CheckoutPage */}
-      {/* <div className="w-full bg-white p-6 rounded-lg shadow-md">
+      <div className="w-full bg-white p-6 rounded-lg shadow-md">
         <CheckoutPage
           cartItems={cartItems}
           updateQuantity={updateQuantity}
           removeFromCart={removeFromCart}
         />
-      </div> */}
+      </div>
     </div>
   );
 };
