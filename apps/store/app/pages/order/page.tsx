@@ -19,7 +19,7 @@ interface FormData {
   contactEmail: string;
   contactPhone: string;
   logoUrl?: string;
-  cartItems: Product[]; // Add cartItems to FormData
+  cartItems: Product[]; 
 }
 
 interface Props {
@@ -27,7 +27,7 @@ interface Props {
   removeFromCart: (productId: number) => void;
 }
 
-const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
+const OrderForm: React.FC= () => {
   const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
@@ -229,6 +229,14 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
         </div>
       </div>
 
+      {/* CheckoutPage */}
+      {/* <div className="w-full bg-white p-6 rounded-lg shadow-md">
+        <CheckoutPage
+          cartItems={cartItems}
+          updateQuantity={updateQuantity}
+          removeFromCart={removeFromCart}
+        />
+      </div> */}
     </div>
   );
 };
