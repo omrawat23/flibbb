@@ -28,7 +28,7 @@ export interface Props {
   removeFromCart: (productId: number) => void;
 }
 
-const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
+export const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
   const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
@@ -241,4 +241,4 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
   );
 };
 
-export default OrderForm;
+
