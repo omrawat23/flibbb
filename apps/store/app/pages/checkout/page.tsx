@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useRef } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FiMinus, FiPlus, FiStar, FiX, FiChevronLeft, FiChevronRight, FiShoppingCart } from 'react-icons/fi';
 import { useStore } from '../../../../store/store/store';
@@ -98,7 +99,7 @@ const CartPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {items.map((item) => (
                 <div key={item.id} className="border rounded-lg p-4 flex flex-col" onClick={() => openModal(item)}>
-                  <img src={item.imageUrl} alt={item.name} className="w-full h-48 object-contain mb-4" />
+                  <Image src={item.imageUrl} alt={item.name} className="w-full h-48 object-contain mb-4" />
                   <div className="flex justify-between items-center mb-2">
                     <span className="font-semibold">{item.name}</span>
                     <div className="flex items-center">
@@ -173,7 +174,7 @@ const CartPage: React.FC = () => {
               <div className="relative flex flex-col items-center justify-center mr-14 ml-4">
                 {selectedProduct.images && selectedProduct.images.length > 0 && (
                   <>
-                    <img
+                    <Image
                       src={selectedProduct.images[currentImageIndex]}
                       alt={selectedProduct.name}
                       className="w-full h-48 object-contain mb-4 rounded-md"
@@ -192,7 +193,7 @@ const CartPage: React.FC = () => {
                 <div className="flex items-center space-x-2 px-2">
                   <div className="flex space-x-2 mr-9 ml-0">
                     {selectedProduct.images && selectedProduct.images.map((img, index) => (
-                      <img
+                      <Image
                         key={index}
                         src={img}
                         alt="Thumbnail"

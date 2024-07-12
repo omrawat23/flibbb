@@ -5,6 +5,7 @@ import { Product } from '../../types';
 import CheckoutPage from '../../../components/CheckoutPage';
 import { useStore } from '../../../store/store';
 import Link from 'next/link';
+import Image from 'next/image';
 import { db, storage } from '../../firebaseConfig';
 import { collection, addDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
@@ -183,7 +184,7 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
             >
               {logoUrl ? (
                 <div className="flex flex-col items-center">
-                  <img src={logoUrl} alt="Uploaded logo" className="max-h-24" />
+                  <Image src={logoUrl} alt="Uploaded logo" className="max-h-24" />
                   <span className="text-green-500 mt-2">Logo Uploaded</span>
                 </div>
               ) : (
