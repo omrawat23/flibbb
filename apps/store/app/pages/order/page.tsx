@@ -19,11 +19,11 @@ export interface FormData {
   contactEmail: string;
   contactPhone: string;
   logoUrl?: string;
-
+  cartItems: Product[]; // Add cartItems to FormData
 }
 
 interface Props {
-
+  cartItems?: Product[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
@@ -39,7 +39,7 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
     contactName: '',
     contactEmail: '',
     contactPhone: '',
-
+    cartItems: [], // Initialize with empty cart items
   });
 
   const [errors, setErrors] = useState<string[]>([]);
