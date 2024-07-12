@@ -14,13 +14,13 @@ interface Product {
 }
 
 interface Props {
-  cartItems?: Product[];
+  cartItems: Product[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
 
 const CheckoutPage: React.FC<Props> = ({
-  cartItems = [],
+  cartItems,
   updateQuantity,
   removeFromCart,
 }) => {
