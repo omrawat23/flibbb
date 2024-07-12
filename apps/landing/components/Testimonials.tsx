@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -52,7 +53,7 @@ const Testimonials = () => {
               >
                 <p className="mb-4  font-poppins text-base font-semibold leading-6 text-left w-[321px] h-[120px] text-[#303733] ">"{testimonial.quote}"</p>
                 <div className="flex items-center">
-                  <img className="w-12 h-12 rounded-full mr-4" src={testimonial.imageUrl} alt={testimonial.name} />
+                  <Image className="w-12 h-12 rounded-full mr-4" src={testimonial.imageUrl} alt={testimonial.name} />
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
                     <p className="text-sm">{testimonial.title}</p>

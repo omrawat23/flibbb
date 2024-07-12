@@ -3,6 +3,7 @@
 
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const YO: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);

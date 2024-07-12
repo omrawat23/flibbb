@@ -5,6 +5,7 @@ import MaxWidthWrapper from './MaxWidthWrapper'
 import { useInView } from 'framer-motion'
 import { cn } from '../lib/utils'
 import Phone from './Phone'
+import Image from 'next/image'
 
 const PHONES = [
   '/1.jpg',
@@ -154,7 +155,8 @@ function ReviewGrid() {
 export function Reviews() {
   return (
     <MaxWidthWrapper className='relative max-w-5xl'>
-      <img
+      <Image
+      alt='io'
         aria-hidden='true'
         src='/what-people-are-buying.png'
         className='absolute select-none hidden xl:block -left-32 top-1/3'

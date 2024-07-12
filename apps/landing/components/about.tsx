@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const About: React.FC = () => {
   return (
@@ -12,7 +13,8 @@ const About: React.FC = () => {
         <div className="flex flex-col gap-[42px]">
           <div className="flex justify-center">
             <div className="flex flex-col items-center">
-              <img 
+              <Image 
+              alt='ss'
                 src="https://i.postimg.cc/HxVYWCQ8/012a56fb-dd77-4e4a-9772-deafa9038f93.jpg" 
                 className="rounded-full w-48 h-48"
               />
@@ -22,7 +24,8 @@ const About: React.FC = () => {
           </div>
           <div className="flex justify-center gap-[64px]">
             <div className="flex flex-col items-center">
-              <img 
+              <Image 
+              alt='wd'
                 src="https://i.postimg.cc/HxVYWCQ8/012a56fb-dd77-4e4a-9772-deafa9038f93.jpg"
                 className="rounded-full w-48 h-48"
               />
@@ -30,7 +33,8 @@ const About: React.FC = () => {
               <p className="text-gray-600">Co-founder</p>
             </div>
             <div className="flex flex-col items-center">
-              <img 
+              <Image 
+              alt='ad'
                 src="https://i.postimg.cc/HxVYWCQ8/012a56fb-dd77-4e4a-9772-deafa9038f93.jpg" 
                 className="rounded-full w-48 h-48"
               />

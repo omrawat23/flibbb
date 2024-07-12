@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Why: React.FC = () => {
   return (
@@ -14,14 +15,14 @@ const Why: React.FC = () => {
 
       <div className="flex flex-col md:flex-row gap-6 pb-4 mx-auto w-[1312px] h-[525.4px]">
       <div className="bg-[#F7FCF8] p-6 rounded-lg shadow-lg text-center flex-1 flex flex-col justify-center items-center">
-        <img className="mx-auto mb-4" src="https://i.postimg.cc/7PNRWwV4/Screenshot-2024-06-05-at-9-43-6.jpg" alt="Easy Management" />
+        <Image className="mx-auto mb-4" src="https://i.postimg.cc/7PNRWwV4/Screenshot-2024-06-05-at-9-43-6.jpg" alt="Easy Management" />
         <h2 className="top-[24px] w-[341px] h-[89px] gap-[9px] header-3 mb-2 text-[#303733]">Easy Management
           <p className="body-2-regular mt-[9px] text-[#979E9A]">Whether you spend $100 or $100 Million earn 2% cash back on every dollar spent</p>
         </h2>
       </div>
 
       <div className="bg-[#F7FCF8] p-6 rounded-lg shadow-lg text-center flex-1 flex flex-col justify-center items-center">
-        <img className="mx-auto mb-4" src="https://i.postimg.cc/7PNRWwV4/Screenshot-2024-06-05-at-9-43-6.jpg" alt="Warehouse Services" />
+        <Image className="mx-auto mb-4" src="https://i.postimg.cc/7PNRWwV4/Screenshot-2024-06-05-at-9-43-6.jpg" alt="Warehouse Services" />
         <h2 className="w-[341px] h-[89px] gap-[9px] header-3 mb-2 text-[#303733] top-[24px]">Warehouse Services
           <p className="body-2-regular mt-[9px] text-[#979E9A]">No more cluttered offices or crowded closets.</p>
         </h2>
@@ -41,14 +42,14 @@ const Why: React.FC = () => {
   </p>
 </div>
 
-  <img className="w-[396.72px] h-[380.16px] mx-auto md:ml-4 mt-4 md:mt-0" src="https://i.postimg.cc/pLm1r8tV/Screenshot-2024-06-05-at-9-43-6-1.jpg" alt="ALL Swags in one box" />
+  <Image className="w-[396.72px] h-[380.16px] mx-auto md:ml-4 mt-4 md:mt-0" src="https://i.postimg.cc/pLm1r8tV/Screenshot-2024-06-05-at-9-43-6-1.jpg" alt="ALL Swags in one box" />
 </div>
 
 
 <div 
   className="relative bg-[#F7FCF8] justify-center items-center shadow-lg text-center md:col-span-1 w-[430.66px] h-[508px] p-[64px_32px] gap-[48px] rounded-[16px]"
 >
-  <img className="mx-auto mb-4" src="https://i.postimg.cc/7PNRWwV4/Screenshot-2024-06-05-at-9-43-6.jpg" alt="Competitive Pricing" />
+  <Image className="mx-auto mb-4" src="https://i.postimg.cc/7PNRWwV4/Screenshot-2024-06-05-at-9-43-6.jpg" alt="Competitive Pricing" />
   <h2 className=" mt-12 w-[341px] h-[89px] gap-[9px] header-3 mb-2 text-[#303733]">Competitive Pricing
   <p className="body-2-regular mt-[9px] text-[#979E9A]">No more cluttered offices or crowded closets.</p></h2>
 </div>

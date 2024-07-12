@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import MaxWidthWrapper from './MaxWidthWrapper'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           <div className='flex flex-col items-start md:w-1/3 mb-8 md:mb-0 '>
             <h2 className='text-lg font-semibold mb-2'>Get to know more about us</h2>
             <p className='text-sm mb-4'>Reach out to us to know more about our services and product. We’ll reach out to you within 4hrs</p>
-            <img src='https://i.postimg.cc/QCkhyBy0/Flib.jpg' alt='Flib' className='h-6 mb-2 mt-8' />
+            <Image src='https://i.postimg.cc/QCkhyBy0/Flib.jpg' alt='Flib' className='h-6 mb-2 mt-8' />
             <p className='text-sm text-muted-foreground mb-1 text-[#303733]'>
               hassle free swags
             </p>
@@ -55,13 +56,13 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col space-y-5'>
                   <Link href='#' className='body-3 hover:text-gray-600'>
-                    <img src='/icons/email.svg' alt='Email' className='w-[24px] h-[24px]' />
+                    <Image src='/icons/email.svg' alt='Email' className='w-[24px] h-[24px]' />
                   </Link>
                   <Link href='#' className='body-3  hover:text-gray-600'>
-                    <img src='/icons/linkedin.svg' alt='LinkedIn' className='w-[24px] h-[24px]' />
+                    <Image src='/icons/linkedin.svg' alt='LinkedIn' className='w-[24px] h-[24px]' />
                   </Link>
                   <Link href='#' className='body-3  hover:text-gray-600'>
-                    <img src='/icons/insta.svg' alt='Instagram' className='w-[24px] h-[24px]' />
+                    <Image src='/icons/insta.svg' alt='Instagram' className='w-[24px] h-[24px]' />
                   </Link>
                 </div>
               

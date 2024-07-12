@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 const Questions = () => {
   const [open, setOpen] = useState(Array(4).fill(false));
 
@@ -43,7 +43,7 @@ const Questions = () => {
             <div className="flex justify-between items-center mt-[10px]">
               <p className="text-lg">{faq.question}</p>
               <button className="text-lg font-bold">
-                <img
+                <Image
                   src={open[index] ? "icons/cross.svg" : "icons/plus.svg"}
                   alt={open[index] ? "Collapse" : "Expand"}
                   className="w-6 h-6"

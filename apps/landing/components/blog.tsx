@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 const Blog = () => {
   const posts = [
     {
@@ -39,7 +39,7 @@ const Blog = () => {
             key={index} 
             className="relative w-[531.8px] h-[498px] bg-white rounded p-4 overflow-hidden shadow-[0px_2px_6px_2px_rgba(0,0,0,0.15),_0px_1px_2px_0px_rgba(0,0,0,0.30)] border-t-[1.4px]"
           >
-            <img className="h-[294px] w-[499px] object-cover" src={post.imageSrc} alt={post.title} />
+            <Image className="h-[294px] w-[499px] object-cover" src={post.imageSrc} alt={post.title} />
             <div className="mt-[24px]">
               <div className="flex justify-between items-center ">
                 <div className="header-2 text-[#000000]">{post.title}</div>

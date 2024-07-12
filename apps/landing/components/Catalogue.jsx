@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Catalogue = () => {
   return (
     <div className="py-3 px-6 flex justify-center">
@@ -7,14 +9,14 @@ const Catalogue = () => {
             {/* Column 1 */}
             <div className="flex flex-col gap-4">
               <div className="relative">
-                <img
+                <Image
                   src="https://i.postimg.cc/j54vMsST/1-1.jpg"
                   alt="Product 1"
                   className="w-full h-24 lg:h-auto overflow-hidden animate-slideDownUp object-cover rounded-md left-0"
                 />
               </div>
               <div className="relative">
-                <img
+                <Image
                   src="https://i.postimg.cc/0jtnqcSH/1-2.jpg"
                   alt="Product 2"
                   className="w-full h-24 lg:h-auto animate-slideDownUp overflow-hidden object-cover rounded-md"
@@ -24,14 +26,14 @@ const Catalogue = () => {
             {/* Column 2 */}
             <div className="flex flex-col gap-4">
               <div className="relative">
-                <img
+                <Image
                   src="https://i.postimg.cc/BQ6NCf9W/1.jpg"
                   alt="Product 3"
                   className="w-full h-24  lg:h-auto animate-slideUpDown overflow-hidden object-cover rounded-md"
                 />
               </div>
               <div className="relative">
-                <img
+                <Image
                   src="https://i.postimg.cc/65mcjbt8/2.jpg"
                   alt="Product 4"
                   className="w-full h-24  lg:h-auto animate-slideUpDown overflow-hidden object-cover rounded-md"
