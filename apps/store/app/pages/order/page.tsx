@@ -10,7 +10,7 @@ import { db, storage } from '../../firebaseConfig';
 import { collection, addDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
-interface FormData {
+export interface FormData {
   swagBoxes: number;
   deliveryDate: string;
   customItems: string;
@@ -22,7 +22,7 @@ interface FormData {
   cartItems: Product[];
 }
 
-interface Props {
+export interface Props {
   cartItems: Product[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
