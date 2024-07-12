@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, DragEvent } from 'react';
 import { Product } from '../../types';
-import CheckoutPage from '../../../components/CheckoutPage';
 import { useStore } from '../../../store/store';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,7 +9,7 @@ import { db, storage } from '../../firebaseConfig';
 import { collection, addDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
- interface FormData {
+export interface FormData {
   swagBoxes: number;
   deliveryDate: string;
   customItems: string;
@@ -19,21 +18,11 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
   contactEmail: string;
   contactPhone: string;
   logoUrl?: string;
-  cartItems: Product[]; 
+  cartItems: Product[]; // Add cartItems to FormData
 }
 
-interface Props {
-  cartItems?: Product[];
-  updateQuantity: (productId: number, newQuantity: number) => void;
-  removeFromCart: (productId: number) => void;
-}
-
-const OrderForm: React.FC<Props> = ({
-  cartItems = [],
-  updateQuantity,
-  removeFromCart,
-}) => {
-
+const OrderForm: React.FC = () => {
+  const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
     swagBoxes: 0,
@@ -235,13 +224,13 @@ const OrderForm: React.FC<Props> = ({
       </div>
 
       {/* CheckoutPage */}
-      <div className="w-full bg-white p-6 rounded-lg shadow-md">
+      {/* <div className="w-full bg-white p-6 rounded-lg shadow-md">
         <CheckoutPage
           cartItems={cartItems}
           updateQuantity={updateQuantity}
           removeFromCart={removeFromCart}
         />
-      </div>
+      </div> */}
     </div>
   );
 };
