@@ -22,14 +22,10 @@ export interface FormData {
   cartItems: Product[]; // Add cartItems to FormData
 }
 
-interface Props {
-  cartItems?: Product[];
-  updateQuantity: (productId: number, newQuantity: number) => void;
-  removeFromCart: (productId: number) => void;
-}
 
-const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
-  const { cartItems } = useStore();
+
+const OrderForm: React.FC= () => {
+  const { cartItems,updateQuantity,removeFromCart } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
     swagBoxes: 0,
