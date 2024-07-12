@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, DragEvent } from 'react';
 import { Product } from '../../types';
+import CheckoutPage from '../../../components/CheckoutPage';
 import { useStore } from '../../../store/store';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -21,7 +22,13 @@ export interface FormData {
   cartItems: Product[]; // Add cartItems to FormData
 }
 
-const OrderForm: React.FC = () => {
+interface Props {
+  cartItems?: Product[];
+  updateQuantity: (productId: number, newQuantity: number) => void;
+  removeFromCart: (productId: number) => void;
+}
+
+const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
   const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
@@ -224,13 +231,13 @@ const OrderForm: React.FC = () => {
       </div>
 
       {/* CheckoutPage */}
-      {/* <div className="w-full bg-white p-6 rounded-lg shadow-md">
+      <div className="w-full bg-white p-6 rounded-lg shadow-md">
         <CheckoutPage
           cartItems={cartItems}
           updateQuantity={updateQuantity}
           removeFromCart={removeFromCart}
         />
-      </div> */}
+      </div>
     </div>
   );
 };
