@@ -19,16 +19,17 @@ export interface FormData {
   contactEmail: string;
   contactPhone: string;
   logoUrl?: string;
-  cartItems: Product[]; // Add cartItems to FormData
+
 }
 
-interface OrderPageProps  {
-  cartItems?: Product[];
+interface Props {
+
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
 
-const OrderForm: React.FC<OrderPageProps> = ({  cartItems = [], updateQuantity, removeFromCart }) => {
+const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
+  const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
     swagBoxes: 0,
@@ -38,7 +39,7 @@ const OrderForm: React.FC<OrderPageProps> = ({  cartItems = [], updateQuantity, 
     contactName: '',
     contactEmail: '',
     contactPhone: '',
-    cartItems: [], // Initialize with empty cart items
+
   });
 
   const [errors, setErrors] = useState<string[]>([]);
