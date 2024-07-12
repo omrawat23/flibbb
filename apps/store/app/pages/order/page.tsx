@@ -27,7 +27,7 @@ interface Props {
   removeFromCart: (productId: number) => void;
 }
 
-const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
+const OrderForm: React.FC = () => {
   const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
@@ -231,11 +231,11 @@ const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
 
       {/* CheckoutPage */}
       <div className="w-full bg-white p-6 rounded-lg shadow-md">
-        <CheckoutPage
-          cartItems={cartItems}
-          updateQuantity={updateQuantity}
-          removeFromCart={removeFromCart}
-        />
+      <CheckoutPage
+  cartItems={cartItems}
+  updateQuantity={useStore((state) => state.updateQuantity)}
+  removeFromCart={useStore((state) => state.removeFromCart)}
+/>
       </div>
     </div>
   );
