@@ -22,13 +22,12 @@ export interface FormData {
   cartItems: Product[]; // Add cartItems to FormData
 }
 
-interface Props {
-  cartItems?: Product[];
+interface OrderPageProps  {
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
 }
 
-const OrderForm: React.FC<Props> = ({ updateQuantity, removeFromCart }) => {
+const OrderForm: React.FC<OrderPageProps > = ({ updateQuantity, removeFromCart }) => {
   const { cartItems } = useStore();
 
   const [formData, setFormData] = useState<FormData>({
