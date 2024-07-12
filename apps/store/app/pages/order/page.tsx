@@ -19,7 +19,7 @@ export interface FormData {
   contactEmail: string;
   contactPhone: string;
   logoUrl?: string;
-  cartItems: Product[]; // Add cartItems to FormData
+  cartItems: Product[]; 
 }
 
 interface Props {
