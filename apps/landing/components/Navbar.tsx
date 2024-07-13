@@ -20,13 +20,13 @@ const Navbar = async () => {
             <span className="relative text-6xl text-[#2d9f5a] font-bold ">Flib</span>
           </Link>
           <div className='flex space-x-16 '>
-            <Link href='http://localhost:3001/' className='text-[#6D736F] h-[24px] flex items-center font-Poppins leading-none'>
+            <Link href='https://flibbb-store.vercel.app/' className='text-[#6D736F] h-[24px] flex items-center font-Poppins leading-none'>
               Products
             </Link>
             <Link href='/api/company' className='text-[#6D736F] h-[24px] flex items-center font-Poppins leading-none'>
               Company
             </Link>
-            <Link href='/pages/catalogue' className='text-[#6D736F] h-[24px] flex items-center font-Poppins leading-none'>
+            <Link href='https://flibbb-store.vercel.app/pages/catalogue' className='text-[#6D736F] h-[24px] flex items-center font-Poppins leading-none'>
               Catalogue
             </Link>
             <Link href='/about' className='text-[#6D736F] h-[24px] flex items-center font-Poppins leading-none'>

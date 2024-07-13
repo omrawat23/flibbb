@@ -40,7 +40,7 @@ const CategoryBar: React.FC<{
 <nav className='sticky z-[100] inset-x-0 top-0 left-0 w-full h-hug bg-[#FFFFFF] transition-all p-[0px_64px] gap-12  rounded-md shadow-md'>
 
   <div className='flex items-center justify-between py-1 w-[1792px] h-[108px] sm:py-1 relative '>
-    <Link href='http://localhost:3000/' className={montserrat.className}>
+    <Link href='https://flibbb-landing.vercel.app/' className={montserrat.className}>
        <span className="relative text-6xl text-[#2d9f5a] font-bold ml-6">Flib</span>
     </Link>
     <div className="flex items-center">

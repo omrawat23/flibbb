@@ -28,7 +28,7 @@ export default function Home() {
         </p>
 
         <div className='mt-8 flex flex-col sm:flex-row items-center gap-5'>
-          <Link href='/api/auth/login'>
+          <Link href='https://flibbb-store.vercel.app/'>
             <button className='bg-green-600 text-[#FFFFFF] px-6 py-3 rounded-lg body-2 hover:bg-green-700 transition duration-300'>
               Create your Swagbox
             </button>
@@ -109,7 +109,7 @@ export default function Home() {
                   size: 'lg',
                   className: 'mx-auto mt-8',
                 })}
-                href='/configure/upload'>
+                href='https://flibbb-store.vercel.app/'>
                 Create your swag now <ArrowRight className='h-4 w-4 ml-1.5' />
               </Link>
             </div>
