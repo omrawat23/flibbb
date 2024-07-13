@@ -145,7 +145,7 @@ const initialProducts: Product[] = [
   },
   {
     id: 11,
-    name: "Round Neck T-shirt",
+    name: "dropshoulder_black",
     price: 500,
     imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
     quantity: 50,
@@ -181,99 +181,7 @@ const initialProducts: Product[] = [
     ],
     descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
     itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
-  },
-  {
-    id: 14,
-    name: "Round Neck T-shirt",
-    price: 500,
-    imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-    quantity: 50,
-    images:[ "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png"
-    ],
-    descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
-    itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
-  },
-  {
-    id: 15,
-    name: "Round Neck T-shirt",
-    price: 500,
-    imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-    quantity: 50,
-    images:[ "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png"
-    ],
-    descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
-    itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
-  },
-  {
-    id: 16,
-    name: "Round Neck T-shirt",
-    price: 500,
-    imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-    quantity: 50,
-    images:[ "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png"
-    ],
-    descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
-    itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
-  },
-  {
-    id: 17,
-    name: "Round Neck T-shirt",
-    price: 500,
-    imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-    quantity: 50,
-    images:[ "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png"
-    ],
-    descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
-    itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
-  },
-  {
-    id: 18,
-    name: "Round Neck T-shirt",
-    price: 500,
-    imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-    quantity: 50,
-    images:[ "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png"
-    ],
-    descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
-    itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
-  },
-  {
-    id: 19,
-    name: "Round Neck T-shirt",
-    price: 500,
-    imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-    quantity: 50,
-    images:[ "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png"
-    ],
-    descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
-    itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
-  },
-  {
-    id: 20,
-    name: "Round Neck T-shirt",
-    price: 500,
-    imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-    quantity: 50,
-    images:[ "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
-      "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png"
-    ],
-    descriptions: "A cap with adjustable hook-and-loop strap at the back lets you personalise the fit.",
-    itemdetails: "1. Material: 100% polyester\r\n\r\n2. Underbill: 100% cotton"
   }
-
 ];
 
 export default initialProducts;

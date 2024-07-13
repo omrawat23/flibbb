@@ -15,6 +15,8 @@ const About: React.FC = () => {
             <div className="flex flex-col items-center">
               <Image 
               alt='ss'
+              width={100}
+              height={100}
                 src="https://i.postimg.cc/HxVYWCQ8/012a56fb-dd77-4e4a-9772-deafa9038f93.jpg" 
                 className="rounded-full w-48 h-48"
               />
@@ -26,6 +28,8 @@ const About: React.FC = () => {
             <div className="flex flex-col items-center">
               <Image 
               alt='wd'
+              width={100}
+              height={100}
                 src="https://i.postimg.cc/HxVYWCQ8/012a56fb-dd77-4e4a-9772-deafa9038f93.jpg"
                 className="rounded-full w-48 h-48"
               />
@@ -35,6 +39,8 @@ const About: React.FC = () => {
             <div className="flex flex-col items-center">
               <Image 
               alt='ad'
+              width={100}
+              height={100}
                 src="https://i.postimg.cc/HxVYWCQ8/012a56fb-dd77-4e4a-9772-deafa9038f93.jpg" 
                 className="rounded-full w-48 h-48"
               />

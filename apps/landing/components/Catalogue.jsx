@@ -7,9 +7,11 @@ const Catalogue = () => {
       <div className="flex flex-col lg:flex-row items-center bg-green-600 rounded-xl shadow-lg overflow-hidden">
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6 p-4">
             {/* Column 1 */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 ml-0 ">
               <div className="relative">
                 <Image
+                width={400}
+                height={100}
                   src="https://i.postimg.cc/j54vMsST/1-1.jpg"
                   alt="Product 1"
                   className="w-full h-24 lg:h-auto overflow-hidden animate-slideDownUp object-cover rounded-md left-0"
@@ -17,6 +19,8 @@ const Catalogue = () => {
               </div>
               <div className="relative">
                 <Image
+                  width={400}
+                  height={100}
                   src="https://i.postimg.cc/0jtnqcSH/1-2.jpg"
                   alt="Product 2"
                   className="w-full h-24 lg:h-auto animate-slideDownUp overflow-hidden object-cover rounded-md"
@@ -27,6 +31,8 @@ const Catalogue = () => {
             <div className="flex flex-col gap-4">
               <div className="relative">
                 <Image
+                  width={400}
+                  height={100}
                   src="https://i.postimg.cc/BQ6NCf9W/1.jpg"
                   alt="Product 3"
                   className="w-full h-24  lg:h-auto animate-slideUpDown overflow-hidden object-cover rounded-md"
@@ -34,6 +40,8 @@ const Catalogue = () => {
               </div>
               <div className="relative">
                 <Image
+                  width={400}
+                  height={100}
                   src="https://i.postimg.cc/65mcjbt8/2.jpg"
                   alt="Product 4"
                   className="w-full h-24  lg:h-auto animate-slideUpDown overflow-hidden object-cover rounded-md"

@@ -7,28 +7,28 @@ const testimonials = [
     name: "Leslyn Felder",
     title: "HR Manager",
     company: "Goose head Insurance",
-    imageUrl: "path/to/image.jpg"
+    imageUrl: "/path/to/image.jpg"
   },
   {
     quote: "Flib has allowed us to increase our content production with a small team. Its easy to use platform makes it seamless for us to learn different resources within it.",
     name: "Leslyn Felder",
     title: "HR Manager",
     company: "Goose head Insurance",
-    imageUrl: "path/to/image.jpg"
+    imageUrl: "/path/to/image.jpg"
   },
   {
     quote: "Flib has allowed us to increase our content production with a small team. Its easy to use platform makes it seamless for us to learn different resources within it.",
     name: "Leslyn Felder",
     title: "HR Manager",
     company: "Goose head Insurance",
-    imageUrl: "path/to/image.jpg"
+    imageUrl: "/path/to/image.jpg"
   },
   {
     quote: "Flib has allowed us to increase our content production with a small team. Its easy to use platform makes it seamless for us to learn different resources within it.",
     name: "Leslyn Felder",
     title: "HR Manager",
     company: "Goose head Insurance",
-    imageUrl: "path/to/image.jpg"
+    imageUrl: "/path/to/image.jpg"
   }
 ];
 
@@ -53,7 +53,7 @@ const Testimonials = () => {
               >
                 <p className="mb-4 font-poppins text-base font-semibold leading-6 text-left w-[321px] h-[120px] text-[#303733]">&quot;{testimonial.quote}&quot;</p>
                 <div className="flex items-center">
-                  <Image className="w-12 h-12 rounded-full mr-4" src={testimonial.imageUrl} alt={testimonial.name} />
+                  <Image className="w-12 h-12 rounded-full mr-4" src={testimonial.imageUrl} alt={testimonial.name} width={100} height={100}/>
                   <div>
                     <p className="font-bold">{testimonial.name}</p>
                     <p className="text-sm">{testimonial.title}</p>

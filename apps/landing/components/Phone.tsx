@@ -17,16 +17,21 @@ const Phone = ({ imgSrc, className, dark = false, ...props }: PhoneProps) => {
       {...props}>
       <Image
         src='/why.gif'
+        
         className='pointer-events-none z-50 select-none'
         alt='phone image'
+        width={400}
+        height={100}
       />
 
       <div className='absolute -z-10 inset-0'>
-        <Image
+        {/* <Image
           className='object-cover min-w-full min-h-full'
           src='/why.gif'
           alt='overlaying phone image'
-        />
+          width={100}
+          height={100}
+        /> */}
       </div>
     </div>
   )

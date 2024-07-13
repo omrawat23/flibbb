@@ -44,6 +44,8 @@ const Questions = () => {
               <p className="text-lg">{faq.question}</p>
               <button className="text-lg font-bold">
                 <Image
+                width={100}
+                height={100}
                   src={open[index] ? "icons/cross.svg" : "icons/plus.svg"}
                   alt={open[index] ? "Collapse" : "Expand"}
                   className="w-6 h-6"

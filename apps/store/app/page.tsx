@@ -41,7 +41,7 @@ const CategoryBar: React.FC<{
 
   <div className='flex items-center justify-between py-1 w-[1792px] h-[108px] sm:py-1 relative '>
     <Link href='http://localhost:3000/' className={montserrat.className}>
-       <span className="relative text-6xl text-[#2d9f5a] font-bold ">Flib</span>
+       <span className="relative text-6xl text-[#2d9f5a] font-bold ml-6">Flib</span>
     </Link>
     <div className="flex items-center">
       <button
@@ -50,7 +50,8 @@ const CategoryBar: React.FC<{
       >
         <div className="relative flex flex-col items-center h-[84px] w-[72px]">
           <div className="flex items-center justify-center w-9 h-9 mt-2 rounded-[30px] shadow-md bg-white">
-            <Image src={Cart} alt="Shopping Cart" className="w-[17px] h-[17px] text-[#277644]" />
+            <Image src={Cart} alt="Shopping Cart" className="w-[17px] h-[17px] text-[#277644]" width={100}
+                  height={100}/>
           </div>
           {cartItemCount > 0 && (
             <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
@@ -67,7 +68,7 @@ const CategoryBar: React.FC<{
   <div className="flex items-center justify-between py-3 ">
     {/* bg-white sticky top-0 z-50 */}
     <div className="flex items-center">
-      <nav className="flex space-x-8">
+      <nav className="flex space-x-8 ml-6">
         {categories.map((category, index) => (
           <button
             key={category.name}
@@ -78,6 +79,8 @@ const CategoryBar: React.FC<{
             <Image
               src={category.imagePath}
               alt={category.name}
+              width={100}
+              height={100}
               className="w-5 h-4"
               style={{
                 background:selectedCategory === category.name ? '#DBF7E4' : 'none',
@@ -115,7 +118,7 @@ const PageWithSidebar: React.FC = () => {
 
   useEffect(() => {
     const categoryProductIds: { [key: string]: number[] } = {
-      'T-shirts': [11, 14, 15, 16, 17, 18, 19],
+      'T-shirts': [1, 2, 3, 9, 10, 11, 12],
       'Hoodies': [7, 8],
       'Water Bottle': [4],
       'Coffee Mugs': [5],
@@ -211,8 +214,8 @@ const PageWithSidebar: React.FC = () => {
       
       <CategoryBar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} cartItemCount={cartItems.length} animateCheckout={animateCheckout} />
       <div className="flex-grow pl-8 pr-[350px] pt-[48px] items-center justify-between ">
-        <h1 className="h-[48px] header-3 w-[306px] mb-4 test-[#212529]">Best Swags for you</h1>
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2  ">
+        <h1 className="h-[48px] header-3 w-[306px] mb-4 test-[#212529] ml-12">Best Swags for you</h1>
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8  ml-12">
           {products.map((product) => (
             <div
               key={product.id}
@@ -276,7 +279,7 @@ const PageWithSidebar: React.FC = () => {
                 <div className="flex flex-col justify-between flex-grow ">
   <div style={{ marginTop: "-30px" }}> 
     <div className="flex items-center justify-between">
-      <span className="block header-12">{product.name}</span>
+      <span className="block header-222">{product.name}</span>
       <div className="flex items-center">
         <FiStar className="text-[#2CA05A] mr-1" />
         <span className="block text-[#000000] body-3">4.2 <span className='font-bold'>|</span> 2.1k</span>
@@ -325,6 +328,8 @@ const PageWithSidebar: React.FC = () => {
               {selectedProduct.images && selectedProduct.images.map((img, index) => (
                 <Image
                   key={index}
+                  width={400}
+                  height={100}
                   src={img}
                   alt="Thumbnail"
                   className={`w-24 h-16 object-contain rounded-md ${currentImageIndex === index ? 'border-2 border-[#2CA05A]' : ''}`}
