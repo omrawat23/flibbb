@@ -13,7 +13,7 @@ const Navbar = async () => {
   const user = await getUser();
 
   return (
-    <nav className='sticky z-[100] inset-x-0 top-0 transition-all flex items-center justify-center mt-[24px]'>
+    <nav className='z-[100] inset-x-0 top-0 transition-all flex items-center justify-center mt-[24px]'>
       <div className='w-full max-w-[1792px] px-8 flex items-center justify-between'>
         <div className='flex items-center space-x-16'>
           <Link href='/' className={montserrat.className}>

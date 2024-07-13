@@ -93,7 +93,7 @@ const initialProducts: Product[] = [
   },
   {
     id: 7,
-    name: "pullover_hoodie_black",
+    name: "pullover_hoodie",
     price: 500,
     imageUrl: "https://i.postimg.cc/tJ7QMhtx/flib-pullover-hoodie-black.png",
     quantity: 50,
@@ -106,7 +106,7 @@ const initialProducts: Product[] = [
   },
   {
     id: 8,
-    name: "zipup_hoodie_white",
+    name: "zipup_hoodie",
     price: 500,
     imageUrl: "https://i.postimg.cc/Y9qJv1Ps/flib-zipup-hoodie-white.png",
     quantity: 50,
@@ -132,7 +132,7 @@ const initialProducts: Product[] = [
   },
   {
     id: 10,
-    name: "flib_dryfit_white",
+    name: "dryfit_white",
     price: 500,
     imageUrl: "https://i.postimg.cc/XvnPPfnY/flib-dryfit-white.png",
     quantity: 50,
@@ -145,7 +145,7 @@ const initialProducts: Product[] = [
   },
   {
     id: 11,
-    name: "dropshoulder_black",
+    name: "drop_black",
     price: 500,
     imageUrl: "https://i.postimg.cc/Sj0Tf8Zq/flib-dropshoulder-black.png",
     quantity: 50,
@@ -158,7 +158,7 @@ const initialProducts: Product[] = [
   },
   {
     id: 12,
-    name: "dropshoulder_white",
+    name: "drop_white",
     price: 500,
     imageUrl: "https://i.postimg.cc/TYgfMcvV/flib-dropshoulder-white.png",
     quantity: 50,
